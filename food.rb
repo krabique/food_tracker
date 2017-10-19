@@ -17,10 +17,8 @@ def prompt(*args)
   gets
 end
 
-time = Time.strptime(prompt('Breakfast:  '), '%H:%M')
-
-# breakfast = time
-elevenses = time.add_hours(2.5)
+breakfast = Time.strptime(prompt('Breakfast:  '), '%H:%M')
+elevenses = breakfast.add_hours(2.5)
 dinner = elevenses.add_hours(2.5)
 tea = dinner.add_hours(3)
 supper = tea.add_hours(3)
